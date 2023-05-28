@@ -9,4 +9,9 @@
 8. sudo update-alternatives --config java
 9. Glassfish server version must be 4.1.1
 
+sudo apt purge openjdk*
+sudo update-alternatives --remove "java" "/usr/lib/jvm/jdk[version]/bin/java"    
+sudo update-alternatives --remove "javac" "/usr/lib/jvm/jdk[version]/bin/javac"    
+sudo update-alternatives --remove "javaws" "/usr/lib/jvm/jdk[version]/bin/javaws"
+sudo rm -r /usr/lib/jvm/jdk[version]
  
